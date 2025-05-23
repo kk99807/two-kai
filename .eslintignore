@@ -1,0 +1,63 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+
+# Next.js
+.next/
+out/
+build
+dist
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Prisma
+prisma/client/
+src/generated/**/*
+**/*.generated.*
+.prisma/
+node_modules/.prisma/
+
+# Explicitly ignore the generated files
+/src/generated/
+/src/generated/**/*
+/src/generated/prisma/
+/src/generated/prisma/**/*
+/src/generated/prisma/wasm.js
+
+# Dependencies and build
+/node_modules/
+/.next/
+/dist/
+/build/
+/.prisma/
+
+# Generated files
+**/*.generated.*
+**/*.gen.*
+**/*.d.ts
+
+# Prisma
+/prisma/client/
+/.prisma/
+/node_modules/.prisma/ 

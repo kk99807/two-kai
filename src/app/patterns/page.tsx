@@ -55,7 +55,7 @@ export default function PatternsPage() {
         <p>
           The Two-Kai pattern is a remarkable literary structure discovered in the Book of Revelation
           by Pastor Edward A. Robson. These patterns consist of three parts connected by the Greek
-          word "καί" (kai), forming beautiful symmetrical structures that enhance our understanding
+          word &ldquo;καί&rdquo; (kai), forming beautiful symmetrical structures that enhance our understanding
           of the text.
         </p>
         <p>
@@ -63,13 +63,13 @@ export default function PatternsPage() {
         </p>
         <ul>
           <li>A first statement or phrase</li>
-          <li>The Greek word "καί" (and)</li>
+          <li>The Greek word &ldquo;καί&rdquo; (and)</li>
           <li>A central statement or phrase</li>
-          <li>Another "καί"</li>
+          <li>Another &ldquo;καί&rdquo;</li>
           <li>A concluding statement or phrase</li>
         </ul>
         <p>
-          The intervals between these "καί" connections often reveal deeper meanings and connections
+          The intervals between these &ldquo;καί&rdquo; connections often reveal deeper meanings and connections
           within the text, showing the divine inspiration behind the Book of Revelation.
         </p>
       </div>

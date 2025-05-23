@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="footer footer-center p-10 bg-primary text-primary-content">
       <div>
-        <p className="font-serif text-lg">"Blessed is the one who reads aloud the words of this prophecy…"</p>
+        <p className="font-serif text-lg">&ldquo;Blessed is the one who reads aloud the words of this prophecy…&rdquo;</p>
         <p className="italic">– Revelation 1:3</p>
       </div>
       <div>

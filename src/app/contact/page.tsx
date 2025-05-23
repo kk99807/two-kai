@@ -22,7 +22,7 @@ export default function ContactPage() {
       await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -36,7 +36,7 @@ export default function ContactPage() {
         
         <div className="prose mx-auto mb-8">
           <p>
-            Help us celebrate Pastor Edward A. Robson's 90th birthday by sharing your thoughts,
+            Help us celebrate Pastor Edward A. Robson&apos;s 90th birthday by sharing your thoughts,
             memories, or birthday wishes. Your message will be displayed on this site after
             moderation.
           </p>
@@ -113,7 +113,7 @@ export default function ContactPage() {
             <div className="card bg-base-100 shadow-lg">
               <div className="card-body">
                 <p className="text-lg mb-2">
-                  Thank you for your decades of faithful service and for sharing the beauty of God's Word with us.
+                  Thank you for your decades of faithful service and for sharing the beauty of God&apos;s Word with us.
                 </p>
                 <p className="text-sm text-base-content/70">- John Smith</p>
               </div>

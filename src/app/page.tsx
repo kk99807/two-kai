@@ -7,7 +7,7 @@ export default function Home() {
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold font-serif mb-8">The Beauty of the Book of Revelation</h1>
             <p className="text-xl mb-8">
-              Celebrating Pastor Edward A. Robson's 90th birthday and his groundbreaking research 
+              Celebrating Pastor Edward A. Robson&apos;s 90th birthday and his groundbreaking research 
               into the Two-Kai patterns in the Book of Revelation.
             </p>
             <div className="flex gap-4 justify-center">
@@ -24,11 +24,11 @@ export default function Home() {
         <p>
           Through decades of careful study, Pastor Edward A. Robson uncovered a remarkable pattern 
           in the Book of Revelation - the Two-Kai Configuration. This divine structure appears 
-          throughout the text, revealing the intricate beauty of God's Word.
+          throughout the text, revealing the intricate beauty of God&apos;s Word.
         </p>
         <p>
           The Two-Kai pattern consists of carefully balanced phrases connected by the Greek word 
-          "kai" (meaning "and"), forming beautiful symmetrical structures that enhance our 
+          &ldquo;kai&rdquo; (meaning &ldquo;and&rdquo;), forming beautiful symmetrical structures that enhance our 
           understanding of the text.
         </p>
       </section>
