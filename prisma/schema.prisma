@@ -1,0 +1,41 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Pattern {
+  id                String   @id @default(cuid())
+  section           String   // e.g. "First Heptad"
+  verse             String   // e.g. "Rev 1:3"
+  greekText         String
+  englishText       String
+  structure         String   // e.g. "sentence-kai-sentence-kai-sentence"
+  wordCount         Int
+  interval          Int
+  explanation       String
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@index([section])
+  @@index([verse])
+}
+
+model BirthdayMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String?
+  message   String
+  approved  Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

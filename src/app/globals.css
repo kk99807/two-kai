@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: var(--font-inter);
+  --font-merriweather: var(--font-merriweather);
+}
+
+body {
+  min-height: 100vh;
+} 
