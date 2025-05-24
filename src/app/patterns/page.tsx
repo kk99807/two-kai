@@ -8,11 +8,11 @@ const samplePattern = {
   id: '1',
   section: 'First Heptad',
   verse: 'Revelation 1:3',
-  greekText: 'μακάριος ὁ ἀναγινώσκων καί οἱ ἀκούοντες τοὺς λόγους τῆς προφητείας καί τηροῦντες τὰ ἐν αὐτῇ γεγραμμένα',
-  englishText: 'Blessed is the one who reads aloud and those who hear the words of the prophecy and keep what is written in it.',
+  greekText: 'Μακάριος ὁ ἀναγινώσκων καὶ οἱ ἀκούοντες τοὺς λόγους τῆς προφητείας καὶ τηροῦντες τὰ ἐν αὐτῇ γεγραμμένα, ὁ γὰρ καιρὸς ἐγγύς.',
+  englishText: 'Blessed the one reading AND the ones hearing the word of the Prophecy AND paying attention to the things having been written in her, for The Time is near.',
   structure: 'sentence-kai-sentence-kai-sentence',
-  wordCount: 17,
-  interval: 7,
+  wordCount: 20,
+  interval: 41,
   explanation: 'This verse demonstrates a beautiful 2-Kai pattern where the central phrase is bounded by "kai" (and) on both sides. The pattern emphasizes three groups: the reader, the hearers, and the keepers of the prophecy.',
 };
 
@@ -50,11 +50,11 @@ export default function PatternsPage() {
       <PatternViewer pattern={samplePattern} />
 
       {/* Introduction to Patterns */}
-      <div className="prose mx-auto my-16">
+      <div className="prose mx-auto mt-16 mb-12">
         <h2 className="font-serif">Understanding 2-Kai Patterns</h2>
-        <p>
+        <p className="mt-4">
           The 2-Kai pattern is a remarkable literary structure discovered in the Book of Revelation
-          by Pastor Edward A. Robson. These patterns consist of three parts connected by two instances of the Greek
+          by Pastor Edward A. Robson. These patterns consist of three phrases connected by two instances of the Greek
           word &ldquo;καί&rdquo; (kai), forming beautiful symmetrical structures that enhance our understanding
           of the text.
         </p>

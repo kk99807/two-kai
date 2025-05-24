@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Merriweather } from 'next/font/google'
+import { Inter, Merriweather, Noto_Serif } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -14,6 +14,13 @@ const merriweather = Merriweather({
   weight: ['300', '400', '700', '900'],
   subsets: ['latin'],
   variable: '--font-merriweather',
+  display: 'swap',
+})
+
+const notoSerif = Noto_Serif({
+  weight: ['400', '700'],
+  subsets: ['latin', 'greek'],
+  variable: '--font-noto-serif',
   display: 'swap',
 })
 
@@ -43,7 +50,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="twokai">
-      <body className={`${inter.variable} ${merriweather.variable} font-sans bg-parchment min-h-screen flex flex-col`}>
+      <body className={`${inter.variable} ${merriweather.variable} ${notoSerif.variable} font-sans bg-parchment min-h-screen flex flex-col`}>
         <Header />
         <main className="container mx-auto px-4 flex-grow">
           {children}

@@ -6,31 +6,43 @@ export interface TwoKaiPattern {
 }
 
 export function findTwoKaiPattern(text: string): TwoKaiPattern | null {
-  // This is a placeholder implementation
-  // The actual implementation will need to:
-  // 1. Identify the Greek word "καί" (kai)
-  // 2. Analyze the surrounding text structure
-  // 3. Validate the pattern matches the 2-Kai configuration
-  // 4. Return the parts and interval if found
+  // Split the text by the Greek "καὶ", preserving the delimiter
+  const parts = text.split(/(καὶ)/);
   
-  const kaiPattern = /([^καί]+)(καί)([^καί]+)(καί)([^καί]+)/i;
-  const match = text.match(kaiPattern);
+  // We need at least 5 parts (3 text segments and 2 "καὶ")
+  if (parts.length < 5) return null;
   
-  if (!match) return null;
+  // Find the indices of "καὶ"
+  const kaiIndices = parts.reduce<number[]>((acc, part, index) => {
+    if (part === 'καὶ') acc.push(index);
+    return acc;
+  }, []);
+  
+  // We need exactly 2 "καὶ"
+  if (kaiIndices.length !== 2) return null;
+  
+  const [firstKai, secondKai] = kaiIndices;
   
   return {
-    firstPart: match[1].trim(),
-    secondPart: match[3].trim(),
-    thirdPart: match[5].trim(),
-    interval: match[3].trim().split(/\s+/).length, // Simple word count
+    firstPart: parts.slice(0, firstKai).join('').trim(),
+    secondPart: parts.slice(firstKai + 1, secondKai).join('').trim(),
+    thirdPart: parts.slice(secondKai + 1).join('').trim(),
+    interval: parts.slice(firstKai + 1, secondKai).join('').trim().split(/\s+/).length,
   };
 }
 
 export function highlightKaiPattern(text: string, pattern: TwoKaiPattern): string {
-  // This function will wrap the pattern parts in HTML/JSX elements for highlighting
-  // This is a placeholder implementation
-  return text.replace(
-    new RegExp(`(${pattern.firstPart})(καί)(${pattern.secondPart})(καί)(${pattern.thirdPart})`, 'i'),
-    '<span class="text-primary">$1</span><span class="text-accent">καί</span><span class="text-secondary">$3</span><span class="text-accent">καί</span><span class="text-primary">$5</span>'
-  );
+  // Directly construct the highlighted HTML using the pattern parts
+  const highlightedText = 
+    `<span class="text-primary !important">${pattern.firstPart}</span>` +
+    ` <span class="text-accent font-bold !important">καὶ</span> ` +
+    `<span class="text-secondary !important">${pattern.secondPart}</span>` +
+    ` <span class="text-accent font-bold !important">καὶ</span> ` +
+    `<span class="text-primary !important">${pattern.thirdPart}</span>`;
+
+  console.log('Original text:', text);
+  console.log('Pattern parts:', pattern);
+  console.log('Highlighted text:', highlightedText);
+  
+  return highlightedText;
 } 
