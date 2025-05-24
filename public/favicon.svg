@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"><svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with bright, solid color -->
+  <circle cx="16" cy="16" r="16" fill="#7F79F8"></circle>
+  
+  <!-- Book icon (much larger and centered) -->
+  <g transform="translate(6, 6) scale(1.0)">
+    <path d="M10 3.253v13m0-13C8.832 2.477 7.246 2 5.5 2S2.168 2.477 1 3.253v13C2.168 15.477 3.754 15 5.5 15s3.332.477 4.5 1.253m0-13C11.168 2.477 12.754 2 14.5 2c1.746 0 3.332.477 4.5 1.253v13C17.832 15.477 16.246 15 14.5 15c-1.746 0-3.332.477-4.5 1.253" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

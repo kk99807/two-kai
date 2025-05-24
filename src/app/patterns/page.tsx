@@ -50,7 +50,7 @@ export default function PatternsPage() {
       <PatternViewer pattern={samplePattern} />
 
       {/* Introduction to Patterns */}
-      <div className="prose mx-auto mt-16">
+      <div className="prose mx-auto my-16">
         <h2 className="font-serif">Understanding 2-Kai Patterns</h2>
         <p>
           The 2-Kai pattern is a remarkable literary structure discovered in the Book of Revelation

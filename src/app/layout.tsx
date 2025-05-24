@@ -20,6 +20,20 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   title: 'Two Kai - The Beauty of Revelation',
   description: 'Exploring the 2-Kai patterns in the Book of Revelation, honoring Pastor Edward A. Robson\'s 90th birthday and research legacy.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
+  other: {
+    'msapplication-TileColor': '#ffffff',
+    'theme-color': '#ffffff',
+  },
 }
 
 export default function RootLayout({
