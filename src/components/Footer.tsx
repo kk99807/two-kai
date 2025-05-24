@@ -8,9 +8,9 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h3 className="font-serif text-lg font-semibold mb-3">Scripture</h3>
             <blockquote className="text-sm opacity-90 leading-relaxed">
-              "Blessed is the one who reads aloud the words of this prophecy…"
+              &ldquo;Blessed is the one who reads aloud the words of this prophecy&hellip;&rdquo;
             </blockquote>
-            <cite className="text-xs opacity-75 italic block mt-2">– Revelation 1:3</cite>
+            <cite className="text-xs opacity-75 italic block mt-2">&ndash; Revelation 1:3</cite>
           </div>
 
           {/* Navigation Links */}
@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="text-center md:text-right">
             <h3 className="font-serif text-lg font-semibold mb-3">Celebration</h3>
             <p className="text-sm opacity-90 leading-relaxed mb-2">
-              Join us in celebrating Pastor Robson's 90th birthday and his remarkable discoveries.
+              Join us in celebrating Pastor Robson&apos;s 90th birthday and his remarkable discoveries.
             </p>
             <a href="/contact" className="inline-flex items-center gap-1 text-sm link link-hover hover:text-white transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
