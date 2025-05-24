@@ -52,42 +52,6 @@ export default function PatternViewer({ pattern }: PatternViewerProps) {
           </div>
         </div>
 
-        {/* Pattern Diagram */}
-        {kaiPattern && showDiagram && (
-          <div className="mt-8">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-xl font-serif">Pattern Structure</h3>
-              <button 
-                className="btn btn-ghost btn-sm"
-                onClick={() => setShowDiagram(!showDiagram)}
-              >
-                Hide Diagram
-              </button>
-            </div>
-            
-            <div className="bg-base-200 p-4 rounded-lg">
-              <div className="flex flex-col items-center space-y-4">
-                <div className="grid grid-cols-3 gap-4 w-full text-center">
-                  <div className="p-3 bg-primary/10 text-primary rounded-lg border border-primary/20">
-                    <span className="font-['Noto_Serif'] text-sm">{kaiPattern.firstPart}</span>
-                  </div>
-                  <div className="p-3 bg-secondary/10 text-secondary rounded-lg border border-secondary/20">
-                    <span className="font-['Noto_Serif'] text-sm">{kaiPattern.secondPart}</span>
-                  </div>
-                  <div className="p-3 bg-primary/10 text-primary rounded-lg border border-primary/20">
-                    <span className="font-['Noto_Serif'] text-sm">{kaiPattern.thirdPart}</span>
-                  </div>
-                </div>
-                <div className="flex justify-center items-center space-x-4">
-                  <span className="text-accent font-['Noto_Serif'] font-bold">καὶ</span>
-                  <span className="text-base-content/50">{kaiPattern.interval} words</span>
-                  <span className="text-accent font-['Noto_Serif'] font-bold">καὶ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-
         {/* Pattern Explanation */}
         <div className="mt-8 prose">
           <h3 className="text-xl font-serif">Pattern Explanation</h3>
