@@ -19,7 +19,7 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   title: 'Two Kai - The Beauty of Revelation',
-  description: 'Exploring the Two-Kai patterns in the Book of Revelation, honoring Pastor Edward A. Robson\'s 90th birthday and research legacy.',
+  description: 'Exploring the 2-Kai patterns in the Book of Revelation, honoring Pastor Edward A. Robson\'s 90th birthday and research legacy.',
 }
 
 export default function RootLayout({

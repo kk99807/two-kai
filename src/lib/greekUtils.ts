@@ -10,7 +10,7 @@ export function findTwoKaiPattern(text: string): TwoKaiPattern | null {
   // The actual implementation will need to:
   // 1. Identify the Greek word "καί" (kai)
   // 2. Analyze the surrounding text structure
-  // 3. Validate the pattern matches the Two-Kai configuration
+  // 3. Validate the pattern matches the 2-Kai configuration
   // 4. Return the parts and interval if found
   
   const kaiPattern = /([^καί]+)(καί)([^καί]+)(καί)([^καί]+)/i;

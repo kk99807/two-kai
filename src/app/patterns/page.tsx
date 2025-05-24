@@ -13,7 +13,7 @@ const samplePattern = {
   structure: 'sentence-kai-sentence-kai-sentence',
   wordCount: 17,
   interval: 7,
-  explanation: 'This verse demonstrates a beautiful Two-Kai pattern where the central phrase is bounded by "kai" (and) on both sides. The pattern emphasizes three groups: the reader, the hearers, and the keepers of the prophecy.',
+  explanation: 'This verse demonstrates a beautiful 2-Kai pattern where the central phrase is bounded by "kai" (and) on both sides. The pattern emphasizes three groups: the reader, the hearers, and the keepers of the prophecy.',
 };
 
 const sections = [
@@ -31,7 +31,7 @@ export default function PatternsPage() {
 
   return (
     <div className="min-h-screen py-8">
-      <h1 className="text-4xl font-serif text-center mb-12">Two-Kai Pattern Explorer</h1>
+      <h1 className="text-4xl font-serif text-center mb-12">2-Kai Pattern Explorer</h1>
       
       {/* Section Navigation */}
       <div className="tabs tabs-boxed justify-center mb-8">
@@ -51,9 +51,9 @@ export default function PatternsPage() {
 
       {/* Introduction to Patterns */}
       <div className="prose mx-auto mt-16">
-        <h2 className="font-serif">Understanding Two-Kai Patterns</h2>
+        <h2 className="font-serif">Understanding 2-Kai Patterns</h2>
         <p>
-          The Two-Kai pattern is a remarkable literary structure discovered in the Book of Revelation
+          The 2-Kai pattern is a remarkable literary structure discovered in the Book of Revelation
           by Pastor Edward A. Robson. These patterns consist of three parts connected by the Greek
           word &ldquo;καί&rdquo; (kai), forming beautiful symmetrical structures that enhance our understanding
           of the text.
