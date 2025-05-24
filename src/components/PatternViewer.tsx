@@ -1,7 +1,5 @@
 'use client';
 
-import { useState } from 'react';
-import type { TwoKaiPattern } from '@/lib/greekUtils';
 import { findTwoKaiPattern, highlightKaiPattern } from '@/lib/greekUtils';
 
 interface PatternViewerProps {
@@ -19,8 +17,6 @@ interface PatternViewerProps {
 }
 
 export default function PatternViewer({ pattern }: PatternViewerProps) {
-  const [showDiagram, setShowDiagram] = useState(true);
-
   // Find the pattern in the Greek text
   const kaiPattern = findTwoKaiPattern(pattern.greekText);
   const highlightedGreek = kaiPattern ? highlightKaiPattern(pattern.greekText, kaiPattern) : pattern.greekText;
